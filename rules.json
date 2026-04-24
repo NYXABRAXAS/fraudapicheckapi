@@ -1,0 +1,41 @@
+{
+  "rules": {
+    "duplicate_pan": {
+      "enabled": true,
+      "weight": 30
+    },
+    "duplicate_mobile": {
+      "enabled": true,
+      "weight": 20
+    },
+    "velocity_check": {
+      "enabled": true,
+      "weight": 20
+    },
+    "ip_anomaly": {
+      "enabled": true,
+      "weight": 10,
+      "max_distinct_customers": 3
+    },
+    "email_pattern_risk": {
+      "enabled": true,
+      "weight": 10,
+      "temporary_domains": [
+        "mailinator.com",
+        "guerrillamail.com",
+        "10minutemail.com",
+        "tempmail.com",
+        "yopmail.com"
+      ]
+    },
+    "income_inconsistency": {
+      "enabled": true,
+      "weight": 15,
+      "income_threshold": 2500000
+    },
+    "device_fingerprint": {
+      "enabled": true,
+      "weight": 10
+    }
+  }
+}
